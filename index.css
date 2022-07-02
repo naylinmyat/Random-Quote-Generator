@@ -1,0 +1,13 @@
+html{
+    font-size: 16px;
+    font-family: sans-serif;
+}
+h1{
+    font-family: 'Smooch', cursive;
+}
+h2,
+#quote-author,
+#author-profession,
+#topics{
+    font-family: 'Stick No Bills', sans-serif;
+}

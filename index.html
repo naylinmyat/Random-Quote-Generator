@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Quote Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Smooch&family=Stick+No+Bills:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body class="bg-slate-500">
+    <div class="container w-3/5 mx-auto mt-40 py-4 px-2 bg-white rounded-md md:p-8">
+      <h1 class="flex justify-center text-4xl text-slate-500 mb-8 text-center">Random Quote Generator</h1>
+      <div id="quote-container" class="border-b-2 border-slate-300 mb-6">
+        <h2 id="quote-text" class="text-2xl text-slate-500 text-center">Hello World.</h2>
+
+        <div class="flex flex-col w-full my-6 gap-3 md:flex-row justify-between">
+          <ul class="w-full flex flex-1 gap-3" id="topics"></ul>
+          <div>
+            <span id="quote-author" class="text-xl text-slate-500 flex justify-end">
+              ~Buddha
+            </span>
+            <span id="author-profession" class="text-sm text-slate-500 flex justify-end" id="author-profession">( PHLIOSOPHER )</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="flex flex-col-reverse gap-3 justify-center px-6 md:flex-row">
+        <button
+          type="button"
+          id="share-btn"
+          class="inline-flex justify-center items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-slate-500 hover:bg-slate-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-600"
+        >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"></path></svg>
+        </button>
+        <button
+          id="new-quote"
+          type="button"
+          class="select-none inline-flex justify-center items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-slate-500 hover:bg-slate-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-600"
+        >
+          New Quote
+          <svg
+            class="ml-2 -mr-1 h-5 w-5"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+            />
+            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./script.js" async type="module"></script>
+  </body>
+</html>
